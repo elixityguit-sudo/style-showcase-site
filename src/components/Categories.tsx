@@ -1,5 +1,5 @@
 import productShirts from "@/assets/product-shirts.jpg";
-import productBlazer from "@/assets/product-blazer.jpg";
+import productShorts from "@/assets/product-shorts.jpg";
 import productAccessories from "@/assets/product-accessories.jpg";
 
 const categories = [
@@ -11,9 +11,9 @@ const categories = [
   },
   {
     id: 2,
-    name: "Blazers",
-    description: "Sofisticação no dia a dia",
-    image: productBlazer,
+    name: "Shorts",
+    description: "Conforto e estilo no verão",
+    image: productShorts,
   },
   {
     id: 3,
