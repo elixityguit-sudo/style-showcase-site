@@ -3,6 +3,7 @@ import { Heart, ShoppingBag } from "lucide-react";
 import productPolo from "@/assets/product-polo.jpg";
 import productShortFeatured from "@/assets/product-short-featured.jpg";
 import productCamisetas from "@/assets/product-camisetas.jpg";
+import productCalcasFeatured from "@/assets/product-calcas-featured.jpg";
 
 const products = [
   {
@@ -29,10 +30,9 @@ const products = [
   },
   {
     id: 4,
-    name: "Vestido Clássico",
-    price: 749.90,
-    originalPrice: 899.90,
-    image: productCamisetas,
+    name: "Calças",
+    price: 119.90,
+    image: productCalcasFeatured,
     tag: "Promoção",
   },
 ];
@@ -103,9 +103,9 @@ const FeaturedProducts = () => {
                   <span className="font-body text-lg font-medium text-primary">
                     R$ {product.price.toFixed(2).replace('.', ',')}
                   </span>
-                  {product.originalPrice && (
+                  {'originalPrice' in product && typeof product.originalPrice === 'number' && (
                     <span className="font-body text-sm text-muted-foreground line-through">
-                      R$ {product.originalPrice.toFixed(2).replace('.', ',')}
+                      R$ {(product.originalPrice as number).toFixed(2).replace('.', ',')}
                     </span>
                   )}
                 </div>
