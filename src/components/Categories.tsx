@@ -1,13 +1,13 @@
-import productDress from "@/assets/product-dress.jpg";
+import productShirts from "@/assets/product-shirts.jpg";
 import productBlazer from "@/assets/product-blazer.jpg";
 import productAccessories from "@/assets/product-accessories.jpg";
 
 const categories = [
   {
     id: 1,
-    name: "Vestidos",
-    description: "Elegância para todas as ocasiões",
-    image: productDress,
+    name: "Camisas",
+    description: "Estilo e conforto no dia a dia",
+    image: productShirts,
   },
   {
     id: 2,
