@@ -8,7 +8,7 @@ const products = [
   {
     id: 1,
     name: "Gola Polo Waffle",
-    price: 99.99,
+    price: 99.90,
     image: productPolo,
     sizes: "P M G GG",
     tag: "Novo",
