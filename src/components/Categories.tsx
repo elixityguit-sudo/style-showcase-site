@@ -1,6 +1,6 @@
 import productShirts from "@/assets/product-shirts.jpg";
 import productShorts from "@/assets/product-shorts.jpg";
-import productAccessories from "@/assets/product-accessories.jpg";
+import productPants from "@/assets/product-pants.jpg";
 
 const categories = [
   {
@@ -17,9 +17,9 @@ const categories = [
   },
   {
     id: 3,
-    name: "Acessórios",
-    description: "Detalhes que fazem a diferença",
-    image: productAccessories,
+    name: "Calças",
+    description: "Elegância e versatilidade",
+    image: productPants,
   },
 ];
 
