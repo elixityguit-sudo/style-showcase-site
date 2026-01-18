@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Heart, ShoppingBag } from "lucide-react";
 import productPolo from "@/assets/product-polo.jpg";
-import productBlazer from "@/assets/product-blazer.jpg";
+import productShortFeatured from "@/assets/product-short-featured.jpg";
 import productAccessories from "@/assets/product-accessories.jpg";
 
 const products = [
@@ -15,9 +15,9 @@ const products = [
   },
   {
     id: 2,
-    name: "Blazer Premium",
-    price: 649.90,
-    image: productBlazer,
+    name: "Short",
+    price: 90.00,
+    image: productShortFeatured,
     tag: null,
   },
   {
