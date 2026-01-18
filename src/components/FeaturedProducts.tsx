@@ -2,13 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Heart, ShoppingBag } from "lucide-react";
 import productPolo from "@/assets/product-polo.jpg";
 import productShortFeatured from "@/assets/product-short-featured.jpg";
-import productAccessories from "@/assets/product-accessories.jpg";
+import productCamisetas from "@/assets/product-camisetas.jpg";
 
 const products = [
   {
     id: 1,
     name: "Gola Polo Waffle",
-    price: 100.00,
+    price: 99.99,
     image: productPolo,
     sizes: "P M G GG",
     tag: "Novo",
@@ -22,9 +22,9 @@ const products = [
   },
   {
     id: 3,
-    name: "Bolsa Elegance",
-    price: 459.90,
-    image: productAccessories,
+    name: "Camisetas",
+    price: 49.99,
+    image: productCamisetas,
     tag: "Destaque",
   },
   {
@@ -32,7 +32,7 @@ const products = [
     name: "Vestido Clássico",
     price: 749.90,
     originalPrice: 899.90,
-    image: productAccessories,
+    image: productCamisetas,
     tag: "Promoção",
   },
 ];
