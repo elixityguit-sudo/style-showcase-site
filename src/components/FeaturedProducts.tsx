@@ -1,16 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Heart, ShoppingBag } from "lucide-react";
-import productDress from "@/assets/product-dress.jpg";
+import productPolo from "@/assets/product-polo.jpg";
 import productBlazer from "@/assets/product-blazer.jpg";
 import productAccessories from "@/assets/product-accessories.jpg";
 
 const products = [
   {
     id: 1,
-    name: "Vestido Noite Dourada",
-    price: 899.90,
-    originalPrice: 1199.90,
-    image: productDress,
+    name: "Gola Polo Waffle",
+    price: 100.00,
+    image: productPolo,
+    sizes: "P M G GG",
     tag: "Novo",
   },
   {
@@ -32,7 +32,7 @@ const products = [
     name: "Vestido Clássico",
     price: 749.90,
     originalPrice: 899.90,
-    image: productDress,
+    image: productAccessories,
     tag: "Promoção",
   },
 ];
