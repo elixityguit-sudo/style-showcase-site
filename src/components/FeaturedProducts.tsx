@@ -16,7 +16,7 @@ const products = [
   {
     id: 2,
     name: "Short",
-    price: 90.00,
+    price: 89.90,
     image: productShortFeatured,
     tag: null,
   },
