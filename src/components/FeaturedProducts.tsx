@@ -116,8 +116,10 @@ const FeaturedProducts = () => {
 
         {/* View All Button */}
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg">
-            Ver Todos os Produtos
+          <Button variant="outline" size="lg" asChild>
+            <a href="https://wa.me/5585992528040" target="_blank" rel="noopener noreferrer">
+              Ver Todos os Produtos
+            </a>
           </Button>
         </div>
       </div>
