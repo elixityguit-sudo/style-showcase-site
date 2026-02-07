@@ -1,4 +1,4 @@
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import logo from "@/assets/logo-souza-modas.jpg";
@@ -50,11 +50,10 @@ const Footer = () => {
               Sua loja de moda exclusiva.
             </p>
             <div className="flex gap-4">
-              <Button variant="ghost" size="icon" className="hover:text-primary hover:bg-primary/10">
-                <Instagram className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary hover:bg-primary/10">
-                <Facebook className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="hover:text-primary hover:bg-primary/10" asChild>
+                <a href="https://www.instagram.com/souzxmodas?igsh=MTFpOGZleXN5a3lzMQ==" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="h-5 w-5" />
+                </a>
               </Button>
             </div>
           </div>
