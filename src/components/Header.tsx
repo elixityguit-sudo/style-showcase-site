@@ -11,7 +11,7 @@ const Header = () => {
     { name: "Coleção", href: "#collection" },
     { name: "Novidades", href: "#products" },
     { name: "Sobre", href: "#about" },
-    { name: "Contato", href: "#contact" },
+    { name: "Contato", href: "https://wa.me/5585992528040" },
   ];
 
   return (
@@ -36,6 +36,8 @@ const Header = () => {
               <a
                 key={link.name}
                 href={link.href}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="font-body text-sm tracking-wider text-foreground/80 hover:text-primary transition-colors duration-300 uppercase"
               >
                 {link.name}
@@ -69,6 +71,8 @@ const Header = () => {
                 <a
                   key={link.name}
                   href={link.href}
+                  target={link.href.startsWith("http") ? "_blank" : undefined}
+                  rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="font-body text-sm tracking-wider text-foreground/80 hover:text-primary transition-colors duration-300 uppercase py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
