@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Heart, ShoppingBag } from "lucide-react";
+import { Heart } from "lucide-react";
 import productPolo from "@/assets/product-polo.jpg";
 import productShortFeatured from "@/assets/product-short-featured.jpg";
 import productCamisetas from "@/assets/product-camisetas.jpg";
@@ -38,6 +39,16 @@ const products = [
 ];
 
 const FeaturedProducts = () => {
+  const [likedProducts, setLikedProducts] = useState<number[]>([]);
+
+  const toggleLike = (productId: number) => {
+    setLikedProducts((prev) =>
+      prev.includes(productId)
+        ? prev.filter((id) => id !== productId)
+        : [...prev, productId]
+    );
+  };
+
   return (
     <section id="products" className="py-24 lg:py-32 bg-secondary/30">
       <div className="container mx-auto px-4 lg:px-8">
@@ -75,21 +86,19 @@ const FeaturedProducts = () => {
                   </span>
                 )}
 
-                {/* Quick Actions */}
-                <div className="absolute top-4 right-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-4 group-hover:translate-x-0">
+                {/* Like Button */}
+                <div className="absolute top-4 right-4">
                   <Button
                     variant="secondary"
                     size="icon"
-                    className="h-10 w-10 rounded-full bg-background/90 hover:bg-primary hover:text-primary-foreground"
+                    className={`h-10 w-10 rounded-full transition-all duration-300 ${
+                      likedProducts.includes(product.id)
+                        ? "bg-primary text-primary-foreground"
+                        : "bg-background/90 hover:bg-primary hover:text-primary-foreground"
+                    }`}
+                    onClick={() => toggleLike(product.id)}
                   >
-                    <Heart className="h-4 w-4" />
-                  </Button>
-                  <Button
-                    variant="secondary"
-                    size="icon"
-                    className="h-10 w-10 rounded-full bg-background/90 hover:bg-primary hover:text-primary-foreground"
-                  >
-                    <ShoppingBag className="h-4 w-4" />
+                    <Heart className={`h-4 w-4 ${likedProducts.includes(product.id) ? "fill-current" : ""}`} />
                   </Button>
                 </div>
               </div>
