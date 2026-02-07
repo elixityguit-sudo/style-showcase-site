@@ -1,6 +1,5 @@
 import productShirts from "@/assets/product-shirts.jpg";
 import productShorts from "@/assets/product-shorts.jpg";
-import productPants from "@/assets/product-pants.jpg";
 
 const categories = [
   {
@@ -14,12 +13,6 @@ const categories = [
     name: "Shorts",
     description: "Conforto e estilo no verão",
     image: productShorts,
-  },
-  {
-    id: 3,
-    name: "Calças",
-    description: "Elegância e versatilidade",
-    image: productPants,
   },
 ];
 
@@ -39,7 +32,7 @@ const Categories = () => {
         </div>
 
         {/* Categories Grid */}
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
           {categories.map((category, index) => (
             <div
               key={category.id}
