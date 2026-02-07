@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import logo from "@/assets/logo-souza-modas.jpg";
@@ -32,7 +32,7 @@ const Footer = () => {
 
       {/* Main Footer */}
       <div className="container mx-auto px-4 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-6">
@@ -97,39 +97,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h4 className="font-display text-lg text-foreground mb-6">
-              Contato
-            </h4>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                <span className="font-body text-sm text-foreground/60">
-                  Rua da Moda, 123<br />
-                  Centro - Sua Cidade
-                </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                <a
-                  href="tel:+5511999999999"
-                  className="font-body text-sm text-foreground/60 hover:text-primary transition-colors duration-300"
-                >
-                  (11) 99999-9999
-                </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                <a
-                  href="mailto:contato@souzamodas.com"
-                  className="font-body text-sm text-foreground/60 hover:text-primary transition-colors duration-300"
-                >
-                  contato@souzamodas.com
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
 
