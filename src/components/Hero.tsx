@@ -32,9 +32,11 @@ const Hero = () => {
             Moda que transcende o tempo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="luxury" size="lg" className="group">
-              Ver Coleção
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            <Button variant="luxury" size="lg" className="group" asChild>
+              <a href="https://wa.me/5585992528040" target="_blank" rel="noopener noreferrer">
+                Ver Coleção
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </a>
             </Button>
             <Button variant="outline" size="lg">
               Saiba Mais
