@@ -64,13 +64,21 @@ const Footer = () => {
               Links Rápidos
             </h4>
             <ul className="space-y-3">
-              {["Início", "Coleção", "Novidades", "Sobre Nós", "Contato"].map((link) => (
-                <li key={link}>
+              {[
+                { label: "Início", href: "#" },
+                { label: "Coleção", href: "#" },
+                { label: "Novidades", href: "#" },
+                { label: "Sobre Nós", href: "#" },
+                { label: "Contato", href: "https://wa.me/5585992528040" },
+              ].map((link) => (
+                <li key={link.label}>
                   <a
-                    href="#"
+                    href={link.href}
+                    target={link.href.startsWith("http") ? "_blank" : undefined}
+                    rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                     className="font-body text-sm text-foreground/60 hover:text-primary transition-colors duration-300"
                   >
-                    {link}
+                    {link.label}
                   </a>
                 </li>
               ))}
